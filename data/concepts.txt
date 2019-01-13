@@ -1,0 +1,21 @@
+callback-
+Callback is an asynchronous equivalent for a function.
+A callback function is called at the completion of a given task.
+
+
+event loop-
+*Node.js is a single-threaded application, but it can support concurrency via the concept of event and callbacks.
+*Node thread keeps an event loop and whenever a task gets completed,
+it fires the corresponding event which signals the event-listener function to execute.
+*There is generally a main loop that listens for events,
+and then triggers a callback function when one of those events is detected.
+*The callback functions are called when an asynchronous function returns its result,
+whereas event handling works on the observer pattern.
+The functions that listen to events act as Observers. Whenever an event gets fired,
+its listener function starts executing.
+
+
+basic-
+*In Node Application, any async function accepts a callback as the last parameter and
+a callback function accepts an error as the first parameter.
+* on is used to bind an event and a handler , et is used to fire an event

@@ -1,0 +1,47 @@
+JAVA 8 FEATURES
+
+------LAMBDA EXPRESSIONS------
+
+-to iterate , filter and extract data from collection
+
+-FUNCTIONAL INTERFACE - an interface that contains only one abstract method but multiple default methods(not too many,only whenever necessary)
+
+-lambda exp are used to create instance of functional interface - to override and define body in one line only as an expression
+
+-functinonal interfaces like -Predicate.test(), BinarryOperator.apply(),Function.apply() etc
+
+-no need to define the method again, just provide the implementation
+
+-Syntax
+	(argument-list) -> {body}
+
+-@FunctionalInterface annotation
+
+-before , we use anonymous class to implement the interface and define the method
+
+-lambda exp can have 
+	-0 or many params
+	-can omit arguments parantheses when params present
+	-with multiple params, args may/may not have datatypes mentioned
+	-body - () - must have only one statement|should be return value|no 'return' keyword|no ';'
+		{} - when multiple statements|each ending with ';'|return should be used
+
+-examples - collects.sort with overriding comparator
+
+-they do not create a new scope
+
+-Filter - Stream<T> myFilteredCollection = myCollection.stream().filter(alias -> condition)
+
+-Iteration - myCollection.forEach( alias -> {what to do})
+
+-Extract
+
+-BUILT IN FUNCTIONAL INTERFACES
+ 	-Function<T,R>.apply()
+
+
+
+----------STREAM-----------
+
+- Arrays.stream(array, startIndexInclusive, endINdexExclusive)
+- Arrays.stream(array)
