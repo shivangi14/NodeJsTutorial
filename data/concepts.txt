@@ -19,3 +19,11 @@ basic-
 *In Node Application, any async function accepts a callback as the last parameter and
 a callback function accepts an error as the first parameter.
 * on is used to bind an event and a handler , et is used to fire an event
+
+npm basics -
+* npm i express
+*npm i express -E (E for exact . no carat sign in version)
+* version - major.minor.patch
+* npm uninstall <module> -S , npm rm <package> -S
+* npm i
+* npm i -g <package>
