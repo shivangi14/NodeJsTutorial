@@ -1,0 +1,16 @@
+*NoSQL databases / non-relational databases
+-schemaless
+-no relationships in db
+-types
+    Key-value stores (Redis, think hash tables)
+    Document stores (mongoDB, think JSON)
+    Columnar stores (hbase, average age)
+    Graphs stores (neo4j)
+
+*MongoDB
+-javascript-like language for interface
+-Availability and Partition tolerance from CAP (C - consistency)
+-Document store NoSQL db (JSON like)
+-REPL is sync, accessing with Mongoclient is asynchronous
+-Hence with mongoclient we have callbacks
+-callback - (error,data)

@@ -11,6 +11,7 @@ Express.js is a web framework based on the core Node.js http module and Connect 
 -middleware is a function having 3 args - request, response , next . Mianly for organizing code
 -middleware orders matters. they are applied top to bottom
 -next() with error goes to error handler . This middleware has 4 args -> error,req,res,next
+-response can be completed in this by end(), send() or next(error)
 
 *req -> series of middleware -> route -> res
 
