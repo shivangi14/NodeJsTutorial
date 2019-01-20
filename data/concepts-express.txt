@@ -1,0 +1,28 @@
+Express.js is a web framework based on the core Node.js http module and Connect components
+
+*The components are called middleware and they are the cornerstones of the framework philosophy configuration over convention.
+
+*middleware = plugin
+
+* D = development dependency , not added in production
+
+*middleware
+-series of processing units connected together, where the output of one unit is the input for the next one.
+-middleware is a function having 3 args - request, response , next . Mianly for organizing code
+-middleware orders matters. they are applied top to bottom
+-next() with error goes to error handler . This middleware has 4 args -> error,req,res,next
+
+*req -> series of middleware -> route -> res
+
+*request is always the same object in the lifecycle of a single client request to the Express server
+Hence, data can be passed from one middleware to another to req handler
+
+*node-parser - enable the json() and urlencoded() middleware to convert raw form data into JSON.
+app.use(bodyParser.json())
+Usage: AJAX/XHR from single-page applications and other JSON REST clients.
+app.use(bodyParser.urlencoded({extended: false}))
+Usage: HTML web forms with action attribute.
+
+*express cheatsheet -https://github.com/azat-co/cheatsheets/tree/master/express4
+
+*app.listen(port)  - to boot up an express server
